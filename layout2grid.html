@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout 2 - Grid</title>
+</head>
+
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        padding: 20px;
+    }
+
+    header {
+        display: grid;
+        place-items: center;
+        background-color: #e7e7e7;
+        padding: 30px;
+        border-radius: 6px;
+    }
+
+    nav {
+        display: grid;
+        place-items: center;
+        background-color: #e7e7e7;
+        padding: 10px;
+        margin: 10px 0px;
+        border-radius: 6px;
+    }
+
+    nav a {
+        background-color: yellow;
+    }
+
+    main {
+        background-color: #e7e7e7;
+        padding: 0 20px 20px 20px;
+        border-radius: 6px;
+    }
+
+    main h2 {
+        display: grid;
+        place-items: center;
+        padding: 30px;
+    }
+
+    .container1 {
+        display: grid;
+        grid-template-columns: 1fr auto;
+        gap: 5px;
+    }
+
+    .container2 {
+        display: grid;
+        grid-template-columns: 1fr auto;
+        direction: rtl;
+        gap: 5px;
+        margin: 10px 0px;
+    }
+
+    .container3 {
+        display: grid;
+        grid-template-columns: 1fr auto;
+        gap: 5px;
+    }
+
+    .side-a {
+        background-color: #090175;
+        border: 1px solid #090175;
+        padding: 10px;
+        border-radius: 6px;
+    }
+
+    .text-side-a {
+        display: grid;
+        place-items: center;
+        background-color: #e7e7e7;
+        width: 140px;
+        height: 140px;
+        font-size: 30px;
+        color: #777777;
+        border-radius: 6px;
+    }
+
+    .text {
+        background-color: #090175;
+        border: 1px solid #090175;
+        align-content: center;
+        padding: 10px;
+        color: #dbdada;
+        border-radius: 6px;
+    }
+
+    .text h3 {
+        padding-bottom: 10px;
+    }
+
+    footer {
+        display: grid;
+        place-items: center;
+        background-color: #e7e7e7;
+        padding: 10px;
+        margin-top: 10px;
+        border-radius: 6px;
+    }
+
+    footer a {
+        background-color: yellow;
+    }
+</style>
+
+<body>
+    <header>
+        <h1>Lorem ipsum dolor sit.</h1>
+    </header>
+    <nav>
+        <a>Navbar</a>
+    </nav>
+    <main>
+        <h2>Article title</h2>
+        <div class="container1">
+            <div class="side-a">
+                <div class="text-side-a">
+                    <p>Side A</p>
+                </div>
+
+            </div>
+            <div class="text">
+                <h3>Lorem, ipsum.</h3>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facilis odio aut explicabo expedita quis,
+                    debitis nulla fuga, quidem aperiam culpa enim dolore illo deleniti cupiditate iure ad ullam
+                    exercitationem voluptates.</p>
+            </div>
+        </div>
+        <div class="container2">
+            <div class="side-a">
+                <div class="text-side-a">
+                    <p>Side A</p>
+                </div>
+            </div>
+            <div class="text">
+                <h3>Lorem, ipsum.</h3>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facilis odio aut explicabo expedita
+                    quis,
+                    debitis nulla fuga, quidem aperiam culpa enim dolore illo deleniti cupiditate iure ad ullam
+                    exercitationem voluptates.</p>
+            </div>
+        </div>
+        <div class="container3">
+            <div class="side-a">
+                <div class="text-side-a">
+                    <p>Side A</p>
+                </div>
+            </div>
+            <div class="text">
+                <h3>Lorem, ipsum.</h3>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facilis odio aut explicabo expedita
+                    quis,
+                    debitis nulla fuga, quidem aperiam culpa enim dolore illo deleniti cupiditate iure ad ullam
+                    exercitationem voluptates.</p>
+            </div>
+        </div>
+    </main>
+    <Footer>
+        <a>Footer</a>
+    </footer>
+</body>
+
+</html>
