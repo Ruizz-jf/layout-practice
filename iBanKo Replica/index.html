@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>iBanko</title>
+</head>
+
+<body>
+    <div class="container-total">
+        <aside>
+            <div class="profile">;
+                <div class="logo"><a href=""><img src="images/logoibanko.png"></a></div>
+                <div class="identity"><a href=""><img src="images/people/me.jpg" height="60px" width="60px"></a>
+                    <h2>Juan Ruiz</h2><span>UIUX Design</span>
+                </div>
+            </div>
+            <hr>
+            <nav class="overview">
+                <h3>Overview</h3>
+                <ul>
+                    <li><a href="">Savings</a></li>
+                    <li><a href="">Cards</a></li>
+                    <li><a href="">Payments</a></li>
+                    <li>
+                        <details>
+                            <summary>Activity</summary>
+                            <p>Paypal</p>
+                            <p>Bancolombia</p>
+                            <p>Davivienda</p>
+                        </details>
+                    </li>
+                    <li><a href="">Profile</a></li>
+                </ul>
+            </nav>
+            <hr>
+            <div class="extra">
+                <ul>
+                    <li><a href="">Support</a></li>
+                    <li><a href="">Setting</a></li>
+                    <li>Theme
+                        <input type="checkbox" id="checkboxInput">
+                        <label for="checkboxInput" class="toggleSwitch">
+                        </label>
+                    </li>
+                </ul>
+            </div>
+            <div class="exit">
+                <a href="index.html"><span>Sign out</span>
+                    <img src="images/exit.png"></a>
+            </div>
+        </aside>
+        <main>
+            <header>
+                <h1>Hello Ruiz <img src="images/hand.png" width="30px"></h1>
+                <select class="choose-account">
+                    <option value="0" disabled selected>Choose Account</option>
+                    <option value="1">#9494880300</option>
+                    <option value="2">#2883030404</option>
+                    <option value="3">#7839444030</option>
+                </select>
+                <div class="shorts">
+                    <a><img src="images/svg/lupa.svg" width="17px" alt="search"></a>
+                    <a><img src="images/svg/notificacion.svg" width="15px" alt="notification"></a>
+                    <a><img src="images/svg/mensajero.svg" width="14px" alt="message"></a>
+                    <a><img src="images/svg/ajuste.svg" width="15px" alt="settings"></a>
+                </div>
+            </header>
+            <div class="central-container">
+                <div class="container-balance-statistics">
+                    <section class="balance">
+                        <div class="container-graphic">
+                            <h2>My Card</h2>
+                            <img src="images/graficos/grafico1.PNG" width="150px" height="40px">
+                        </div>
+                        <div class="available">
+                            <p><strong>$1,438,899.00</strong></p>
+                            <div>
+                                <button class="deposit">Deposit</button>
+                                <button class="withdraw">Withdraw</button>
+                            </div>
+                        </div>
+                    </section>
+                    <section class="financial-record">
+                        <div class="header-financial-record">
+                            <h2>Financial Record</h2>
+                            <select class="date">
+                                <option value="0" disabled selected>Month</option>
+                                <option value="1">January</option>
+                                <option value="2">February</option>
+                                <option value="3">March</option>
+                                <option value="4">April</option>
+                                <option value="5">May</option>
+                                <option value="6">June</option>
+                                <option value="7">July</option>
+                                <option value="8">August</option>
+                                <option value="9">September</option>
+                                <option value="10">October</option>
+                                <option value="11">November</option>
+                                <option value="12">December</option>
+                            </select>
+                        </div>
+                        <div class="statistics">
+                            <div class="total-income">
+                                <div class="title-menu">
+                                    <h3>Total Income</h3><img src="images/graficos/menu1.PNG" width="10px"
+                                        height="20px">
+                                </div>
+                                <div class="mini-chart"><img src="images/graficos/grafico2.PNG" width="55px"
+                                        height="30px"></div>
+                                <div class="money-percentage">
+                                    <p>$85,992</p>
+                                    <div><img src="images/graficos/flecha1.PNG" width="10px" height="12px">
+                                        <p>17%</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="total-expense">
+                                <div class="title-menu">
+                                    <h3>Total Expense</h3><img src="images/graficos/menu2.PNG" width="7px"
+                                        height="18px">
+                                </div>
+                                <div class="mini-chart"><img src="images/graficos/grafico3.PNG" width="55px"
+                                        height="30px"></div>
+                                <div class="money-percentage">
+                                    <p>$38,160</p>
+                                    <div><img src="images/graficos/flecha2.PNG" width="10px" height="12px">
+                                        <p>44%</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="total-saving">
+                                <div class="title-menu">
+                                    <h3>Total Saving</h3><img src="images/graficos/menu3.PNG" width="7px" height="18px">
+                                </div>
+                                <div class="mini-chart"><img src="images/graficos/grafico4.PNG" width="55px"
+                                        height="30px"></div>
+                                <div class="money-percentage">
+                                    <p>$47,832</p>
+                                    <div><img src="images/graficos/flecha3.PNG" width="10px" height="12px">
+                                        <p>45%</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <section>
+                        <div class="money-flow">
+                            <div class="header-money-flow">
+                                <h2>Money Flow</h2>
+                                <div class="point-title">
+                                    <div class="point-black"></div>
+                                    <p>Total Saving</p>
+                                </div>
+                                <div class="point-title">
+                                    <div class="point-orange"></div>
+                                    <p>Total Expense</p>
+                                </div>
+                                <select class="date">
+                                    <option value="0" disabled selected>Weekly</option>
+                                    <option value="1">Monday</option>
+                                    <option value="2">Tuesday</option>
+                                    <option value="3">Wednesday</option>
+                                    <option value="4">Thursday</option>
+                                    <option value="5">Friday</option>
+                                    <option value="6">Saturday</option>
+                                    <option value="7">Sunday</option>
+                                </select>
+                            </div>
+                            <img class="graphic-table" src="images/graficos/grafico5.PNG">
+                        </div>
+                    </section>
+                    <section>
+                        <div class="transfers-payments">
+                            <div class="transfers">
+                                <div class="send-menu">
+                                    <h3>Send Money To</h3>
+                                    <img src="images/menu.png" width="10px" height="25px">
+                                </div>
+                                <div class="recipients">
+                                    <div class="add-recipients"><img src="images/agregar.PNG" width="20px"
+                                            height="20px"></div>
+                                    <img class="person" src="images/people/mom.jpg">
+                                    <img class="person" src="images/people/girlfriend.jpg">
+                                    <img class="person" src="images/people/sister.jpg">
+                                </div>
+                            </div>
+                            <div class="payments">
+                                <div class="payments-menu">
+                                    <h3>Scheduled Payments</h3>
+                                    <img src="images/menu.png" width="10px" height="25px">
+                                </div>
+                                <div class="subscriptions">
+                                    <div class="platform">
+                                        <span>Discord</span>
+                                        <p>$34.99/m</p>
+                                    </div>
+                                    <div class="platform">
+                                        <span>Youtube</span>
+                                        <p>$14.99/m</p>
+                                    </div>
+                                    <div class="platform">
+                                        <span>Netflix</span>
+                                        <p>$9.99/m</p>
+                                    </div>
+                                    <div class="platform">
+                                        <span>iCloud</span>
+                                        <p>$3.99/m</p>
+                                    </div>
+                                    <div class="platform">
+                                        <span>Spotify</span>
+                                        <p>14.99/m</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+                <div class="container-transactions-cards">
+                    <section class="transactions">
+                        <div class="header-transactions">
+                            <h2>Transactions</h2>
+                            <select class="date">
+                                <option value="0" disabled selected>Month</option>
+                                <option value="1">January</option>
+                                <option value="2">February</option>
+                                <option value="3">March</option>
+                                <option value="4">April</option>
+                                <option value="5">May</option>
+                                <option value="6">June</option>
+                                <option value="7">July</option>
+                                <option value="8">August</option>
+                                <option value="9">September</option>
+                                <option value="10">October</option>
+                                <option value="11">November</option>
+                                <option value="12">December</option>
+                            </select>
+                        </div>
+                        <hr class="transactions-hr">
+                        <div class="history">
+                            <ol class="list-transactions">
+                                <li>
+                                    <div class="icon-entrance-exit"><img src="images/ingreso.png" width="10px"
+                                            height="10px"></div>
+                                    <div class="user">
+                                        <p>Jane Cooper</p>
+                                        <span class="date-transactions">30 Sep, 2024</span>
+                                    </div>
+                                    <div class="money"><img src="images/svg/clip.svg" width="15px">
+                                        <p>$1200</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="icon-entrance-exit"><img src="images/ingreso.png" width="10px"
+                                            height="10px"></div>
+                                    <div class="user">
+                                        <p>Leslie Alexander</p>
+                                        <span class="date-transactions">30 Sep, 2024</span>
+                                    </div>
+                                    <div class="money"><img src="images/svg/clip.svg" width="15px">
+                                        <p>$1750</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="icon-entrance-exit"><img src="images/salida.png" width="10px"
+                                            height="10px"></div>
+                                    <div class="user">
+                                        <p>Flight Ticket</p>
+                                        <span class="date-transactions">30 Sep, 2024</span>
+                                    </div>
+                                    <div class="money"><img src="images/svg/clip.svg" width="15px">
+                                        <p>$500</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="icon-entrance-exit"><img src="images/ingreso.png" width="10px"
+                                            height="10px"></div>
+                                    <div class="user">
+                                        <p>Robert Fox</p>
+                                        <span class="date-transactions">30 Sep, 2024</span>
+                                    </div>
+                                    <div class="money"><img src="images/svg/clip.svg" width="15px">
+                                        <p>$4300</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="icon-entrance-exit"><img src="images/salida.png" width="10px"
+                                            height="10px"></div>
+                                    <div class="user">
+                                        <p>KFC</p>
+                                        <span class="date-transactions">30 Sep, 2024</span>
+                                    </div>
+                                    <div class="money"><img src="images/svg/clip.svg" width="15px">
+                                        <p>$189</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="icon-entrance-exit"><img src="images/ingreso.png" width="10px"
+                                            height="10px"></div>
+                                    <div class="user">
+                                        <p>Jacob Jones</p>
+                                        <span class="date-transactions">30 Sep, 2024</span>
+                                    </div>
+                                    <div class="money"><img src="images/svg/clip.svg" width="15px">
+                                        <p>$840</p>
+                                    </div>
+                                </li>
+                            </ol>
+                        </div>
+                    </section>
+                    <section class="cards">
+                        <div class="header-cards">
+                            <h2>Available Card</h2>
+                            <a href="index.html">View all</a>
+                        </div>
+                        <div class="available-cards">
+                            <div class="card">
+                                <div class="card-type">
+                                    <p><strong>$3,736</strong></p><img src="images/visa.png" width="40px" height="40px">
+                                </div>
+                                <div class="card-details">
+                                    <div class="card-number">
+                                        <span>Card Number</span>
+                                        <p>7283 2323 7319 ****</p>
+                                    </div>
+                                    <div class="expiration-date">
+                                        <span>Exp</span>
+                                        <p>**/**</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-type">
+                                    <p><strong>$21,426</strong></p><img src="images/american-express.png" width="40px"
+                                        height="40px">
+                                </div>
+                                <div class="card-details">
+                                    <div class="card-number">
+                                        <span>Card Number</span>
+                                        <p>3253 8243 1100 ****</p>
+                                    </div>
+                                    <div class="expiration-date">
+                                        <span>Exp</span>
+                                        <p>**/**</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </main>
+    </div>
+</body>
+
+</html>
